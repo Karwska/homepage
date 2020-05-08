@@ -1,27 +1,26 @@
 .naglowek {
-    color: #F9C802;
+  color: #f9c802;
 }
 #top {
-    background-color: bisque;
+  background-color: bisque;
 }
 ul {
-    color: #FCDEBE;
+  color: #fcdebe;
 }
 p {
-    color: #DBCF96;
+  color: #dbcf96;
 }
 body {
-    background: #2F4858;
+  background: #2f4858;
 }
 nav a {
-    color: #270722
+  color: #270722;
 }
 a {
-    color: #DBCF96;
+  color: #dbcf96;
 }
 .git-try {
-    color: #F9C802;
-    background: #270722;
-    font-size: smaller;
+  color: #f9c802;
+  background: #270722;
+  font-size: smaller;
 }
-    
