@@ -24,3 +24,8 @@ a {
   background: #270722;
   font-size: smaller;
 }
+.boxes-notes {
+  display: inline-block;
+  border: 3px solid #270722;
+  
+}
