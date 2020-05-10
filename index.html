@@ -8,26 +8,26 @@
   </head>
 
   <body>
-    <div class="main-header">
-    <header id="top">
-      <div class="navigation-main">
-        <nav>
-        <div class="navigation"><a href="index.html">Strona główna</a></div>
-        <div class="navigation"><a href="nauka-html.html">HTML</a></div>
-        <div class="navigation"><a href="nauka-css.html">CSS</a></div>
-        <div class="navigation"><a href="nauka-js.html">JavaScript</a></div>
-        <div class="navigation"><a href="terminal_and_git.html">Terminal|GIT</a></div>
-      </nav>
+    <div class="navigation">
+      <header id="top" class="navigation__header">
+          <nav>
+            <div class="navigation__header--link"><a href="index.html">Strona główna</a></div>
+            <div class="navigation__header--link"><a href="nauka-html.html">HTML</a></div>
+            <div class="navigation__header--link"><a href="nauka-css.html">CSS</a></div>
+            <div class="navigation__header--link"><a href="nauka-js.html">JavaScript</a></div>
+            <div class="navigation__header--link">
+              <a href="terminal_and_git.html">Terminal|GIT</a>
+            </div>
+          </nav>
+      </header>
     </div>
-    </div>
-    </header>
-    <main class="centre-test">
-      <header>
-        <h1 class="main-heading">WTF: CO TEN FRONTEND</h1>
+    <main>
+      <header class="main-header">
+        <h1 class= "main-header main-header__heading">WTF: CO TEN FRONTEND</h1>
       </header>
       <section>
-        <h2 class="main-heading">Materiały</h2>
-        <ul>
+        <h2 class="main-header main-header__heading">Materiały</h2>
+        <ul class="main-header main-header__list">
           <li>
             <a href="https://cotenfrontend.pl">WTF - strona domowa</a>
           </li>
@@ -50,19 +50,19 @@
             >
           </li>
         </ul>
-        <h2 class="main-heading">Przydatne linki</h2>
+        <h2 class="main-header main-header__heading--secondary">Przydatne linki</h2>
         <ul>
           <li><a href="https://validator.w3.org/nu/#textarea">Walidator</a></li>
           <li><a href="https://coolors.co/">Coolors</a></li>
         </ul>
       </section>
-      <div class="boxes-notes">
-        <section>
+      <div class="notes">
+        <section class="notes__heading">
           <div class="boxes-notes-headings">
-            <h2 class="main-heading">TYDZIEŃ I</h2>
+            <h2 class="notes__heading">TYDZIEŃ I</h2>
           </div>
           <article>
-            <h3 class="main-heading">Notatki</h3>
+            <h3 class="notes__heading">Notatki</h3>
             <p>
               Tydzień wprowadzający - dowiedziałam się czego będę się uczyć na
               kursie oraz tego, że będzie fajnie :) Poznałam początkowe
@@ -71,13 +71,13 @@
           </article>
         </section>
       </div>
-      <div class="boxes-notes">
+      <div class="notes">
         <section>
           <div class="boxes-notes-headings">
-            <h2 class="main-heading">TYDZIEŃ II</h2>
+            <h2 class="notes__heading">TYDZIEŃ II</h2>
           </div>
           <article>
-            <h3 class="main-heading">Notatki</h3>
+            <h3 class="notes__heading">Notatki</h3>
             <p>
               W tym tygodniu nauczyłam się podstaw budowy jak zbudowana jest
               strona. Stworzyłam też szkieletora - pierwszą stronę internetową,
@@ -92,13 +92,13 @@
           </article>
         </section>
       </div>
-      <div class="boxes-notes">
+      <div class="notes">
         <section>
           <div class="boxes-notes-headings">
-            <h2 class="main-heading">TYDZIEŃ III</h2>
+            <h2 class="notes__heading">TYDZIEŃ III</h2>
           </div>
           <article>
-            <h3 class="main-heading">Moje notatki z tego tygodnia</h3>
+            <h3 class="notes__heading">Moje notatki z tego tygodnia</h3>
             <p>
               Jeśli chodzi o html, to rozwijaliśmy dalszą wiedzę na temat
               semantyki. Poznałam znaczniki, br, b, em, strong, i - a także
@@ -115,13 +115,13 @@
           </article>
         </section>
       </div>
-      <div class="boxes-notes">
+      <div class="notes">
         <section>
           <div class="boxes-notes-headings">
-            <h2 class="main-heading">TYDZIEŃ IV</h2>
+            <h2 class="notes__heading">TYDZIEŃ IV</h2>
           </div>
           <article>
-            <h3 class="main-heading">Notatki</h3>
+            <h3 class="notes__heading">Notatki</h3>
             <p>
               Jak na razie najbardziej intensywny tydzień. Poznałam zasady pracy
               z GITEM, baaaardzo dużo CSS (żyje od dzisiaj w pudełku, a nie
@@ -131,6 +131,12 @@
             </p>
           </article>
         </section>
+      </div>
+      <div class="notes">
+        <h3 class="notes__heading">Tutaj będzie magia</h3>
+        <p class="test-js">
+          <!--Tutaj jeste do wpisania turbo tajny tekst dla JS-->
+        </p>
       </div>
     </main>
     <footer>
