@@ -1,3 +1,22 @@
+body {
+  background: #2f4858;
+}
+
+.git-try {
+  color: #f9c802;
+  background: #270722;
+  font-size: smaller;
+}
+
+.main-header {
+  color: #f9c802;
+}
+
+.main-header__list {
+  color: #fcdebe;
+}
+
+
 .navigation {
   position: relative;
   width: 100vw;
@@ -21,13 +40,7 @@
   background: #300a2a85;
 }
 
-.main-header {
-  color: #f9c802;
-}
 
-.main-header__list {
-  color: #fcdebe;
-}
 .notes {
   display: inline-block;
   border: 1px solid #270722;
@@ -51,13 +64,7 @@
 p {
   color: #dbcf96;
 }
-body {
-  background: #2f4858;
-}
 
-.git-try {
-  color: #f9c802;
-  background: #270722;
-  font-size: smaller;
-}
+
+
 

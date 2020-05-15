@@ -9,140 +9,83 @@
   </head>
 
   <body>
-    <div class="navigation">
-      <header id="top" class="navigation__header">
-          <nav>
-            <div class="navigation__header--link"><a href="index.html">Strona główna</a></div>
-            <div class="navigation__header--link"><a href="nauka-html.html">HTML</a></div>
-            <div class="navigation__header--link"><a href="nauka-css.html">CSS</a></div>
-            <div class="navigation__header--link"><a href="nauka-js.html">JavaScript</a></div>
-            <div class="navigation__header--link">
-              <a href="terminal_and_git.html">Terminal|GIT</a>
-            </div>
-          </nav>
-      </header>
-    </div>
+    <header id="top">
+      <nav class="navigation">
+        <a href="index.html" class="navigation__link">Strona główna</a>
+        <a href="nauka-html.html" class="navigation__link">HTML</a>
+        <a href="nauka-css.html" class="navigation__link">CSS</a>
+        <a href="nauka-js.html" class="navigation__link">JavaScript</a>
+      </nav>
+    </header>
     <main>
-      <header class="main-header">
-        <h1 class= "main-header main-header__heading">WTF: CO TEN FRONTEND</h1>
+      <header class="homepage-header">
+        <h1 class="homepage-header__heading homepage-header__heading--main">
+          WTF: CO TEN FRONTEND
+        </h1>
+        <section class="homepage-header__section">
+          <h2 class="homepage-header__heading">Materiały</h2>
+          <a href="https://cotenfrontend.pl" class="homepage-header__link">WTF - strona domowa</a>
+          <a href="https://edu.devstyle.pl/frontend-edycja-2/" class="homepage-header__link">WTF - kurs</a>
+          <a href="https://youcode.pl/html-css-od-podstaw/" class="homepage-header__link">HTML&CSS od podstaw</a>
+          <a href="https://www.codecademy.com/catalog/language/html-css" class="homepage-header__link">Codecademy</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" class="homepage-header__link"
+            >Mozilla Developers</a
+          >
+        </section>
+        <section class="homepage-header__section">
+          <h2 class="homepage-header__heading">Przydatne link</h2>
+          <a href="https://validator.w3.org/nu/#textarea" class="homepage-header__link">Walidator</a>
+          <a href="https://coolors.co/" class="homepage-header__link">Coolors</a>
+        </section>
       </header>
-      <section>
-        <h2 class="main-header main-header__heading">Materiały</h2>
-        <ul class="main-header main-header__list">
-          <li>
-            <a href="https://cotenfrontend.pl">WTF - strona domowa</a>
-          </li>
-          <li>
-            <a href="https://edu.devstyle.pl/frontend-edycja-2/">WTF - kurs</a>
-          </li>
-          <li>
-            <a href="https://youcode.pl/html-css-od-podstaw/"
-              >HTML & CSS od podstaw</a
-            >
-          </li>
-          <li>
-            <a href="https://www.codecademy.com/catalog/language/html-css"
-              >Codecademy</a
-            >
-          </li>
-          <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
-              >Mozilla Developers</a
-            >
-          </li>
-        </ul>
-        <h2 class="main-header main-header__heading--secondary">Przydatne linki</h2>
-        <ul>
-          <li><a href="https://validator.w3.org/nu/#textarea">Walidator</a></li>
-          <li><a href="https://coolors.co/">Coolors</a></li>
-        </ul>
+      <section class="notes">
+        <h2 class="notes__heading">TYDZIEŃ I</h2>
+        <p class="notes__description">
+          Tydzień wprowadzający - dowiedziałam się czego będę się uczyć na kursie oraz tego, że będzie fajnie :)
+          Poznałam początkowe narzędzia z jakich będziemy korzystać.
+        </p>
       </section>
-      <div class="notes">
-        <section class="notes__heading">
-          <div class="boxes-notes-headings">
-            <h2 class="notes__heading">TYDZIEŃ I</h2>
-          </div>
-          <article>
-            <h3 class="notes__heading">Notatki</h3>
-            <p>
-              Tydzień wprowadzający - dowiedziałam się czego będę się uczyć na
-              kursie oraz tego, że będzie fajnie :) Poznałam początkowe
-              narzędzia z jakich będziemy korzystać.
-            </p>
-          </article>
-        </section>
-      </div>
-      <div class="notes">
-        <section>
-          <div class="boxes-notes-headings">
-            <h2 class="notes__heading">TYDZIEŃ II</h2>
-          </div>
-          <article>
-            <h3 class="notes__heading">Notatki</h3>
-            <p>
-              W tym tygodniu nauczyłam się podstaw budowy jak zbudowana jest
-              strona. Stworzyłam też szkieletora - pierwszą stronę internetową,
-              która będzie moim dziennikiem nauki. Poznałam podstawy HTML oraz
-              podstawy CSS. Poznałam też obsługę narzędzi developerskich, ale
-              cieżko mi ją trochę spamiętać. Po tygodniu zauważyłam, że częściej
-              sprawdzam strony za pomocą narzędzi developerskich, ale to wciąż
-              nie jest pełnia wiedza. Poznałam też obsługę narzędzi
-              developerskich, ale cieżko mi ją trochę spamiętać (tutaj trzeba
-              dodać jakiś memix zrobiony za pomocą narzędzi developerskich)
-            </p>
-          </article>
-        </section>
-      </div>
-      <div class="notes">
-        <section>
-          <div class="boxes-notes-headings">
-            <h2 class="notes__heading">TYDZIEŃ III</h2>
-          </div>
-          <article>
-            <h3 class="notes__heading">Moje notatki z tego tygodnia</h3>
-            <p>
-              Jeśli chodzi o html, to rozwijaliśmy dalszą wiedzę na temat
-              semantyki. Poznałam znaczniki, br, b, em, strong, i - a także
-              równicę między nimi. <br />
-              Bardzo istotną rzeczą była nauka dołączania obrazków i linków.
-              Dzieki temu powstała też nawigacja na tej stronie :)
-            </p>
-            <p>
-              Jeśli chodzi o CSS to poznałam zasady specyficzności CSS oraz to,
-              żeby <em>ZAWSZE</em> stylować po klasach! CSS z tygodnia 3 na
-              początku wydawał się wymagający, ale później przyszedł tydzień 4 i
-              zburzył mój światopogląd...
-            </p>
-          </article>
-        </section>
-      </div>
-      <div class="notes">
-        <section>
-          <div class="boxes-notes-headings">
-            <h2 class="notes__heading">TYDZIEŃ IV</h2>
-          </div>
-          <article>
-            <h3 class="notes__heading">Notatki</h3>
-            <p>
-              Jak na razie najbardziej intensywny tydzień. Poznałam zasady pracy
-              z GITEM, baaaardzo dużo CSS (żyje od dzisiaj w pudełku, a nie
-              marzeniami). Poszerzyłam też wiedzę z JS, natomiast jeszcz jego
-              zastosowanie owiane jest mgłą tajemnicy. Co najważniejsze -
-              commituje teraz jak zła.
-            </p>
-          </article>
-        </section>
-      </div>
-      <div class="notes">
-        <h3 class="notes__heading">Tutaj będzie magia</h3>
-        <p class="test-js">
+      <section class="notes">
+        <h2 class="notes__heading">TYDZIEŃ II</h2>
+        <p class="notes__description">
+          W tym tygodniu nauczyłam się podstaw budowy jak zbudowana jest strona. Stworzyłam też szkieletora - pierwszą
+          stronę internetową, która będzie moim dziennikiem nauki. Poznałam podstawy HTML oraz podstawy CSS. Poznałam
+          też obsługę narzędzi developerskich, ale cieżko mi ją trochę spamiętać. Po tygodniu zauważyłam, że częściej
+          sprawdzam strony za pomocą narzędzi developerskich, ale to wciąż nie jest pełnia wiedza. Poznałam też obsługę
+          narzędzi developerskich, ale cieżko mi ją trochę spamiętać (tutaj trzeba dodać jakiś memix zrobiony za pomocą
+          narzędzi developerskich)
+        </p>
+      </section>
+      <section class="notes">
+        <h2 class="notes__heading">TYDZIEŃ III</h2>
+        <p class="notes__description">
+          Jeśli chodzi o html, to rozwijaliśmy dalszą wiedzę na temat semantyki. Poznałam znaczniki, br, b, em, strong,
+          i - a także równicę między nimi. <br />
+          Bardzo istotną rzeczą była nauka dołączania obrazków i linków. Dzieki temu powstała też nawigacja na tej
+          stronie :)
+        </p>
+        <p class="notes__description">
+          Jeśli chodzi o CSS to poznałam zasady specyficzności CSS oraz to, żeby
+          <em>ZAWSZE</em> stylować po klasach! CSS z tygodnia 3 na początku wydawał się wymagający, ale później
+          przyszedł tydzień 4 i zburzył mój światopogląd...
+        </p>
+      </section>
+      <section class="notes">
+        <h2 class="notes__heading">TYDZIEŃ IV</h2>
+        <p class="notes__description">
+          Jak na razie najbardziej intensywny tydzień. Poznałam zasady pracy z GITEM, baaaardzo dużo CSS (żyje od
+          dzisiaj w pudełku, a nie marzeniami). Poszerzyłam też wiedzę z JS, natomiast jeszcz jego zastosowanie owiane
+          jest mgłą tajemnicy. Co najważniejsze - commituje teraz jak zła.
+        </p>
+      </section>
+      <section class="notes">
+        <h2 class="notes__heading">Tutaj będzie magia</h2>
+        <p class="notes__description notes_description--js">
           <!--Tutaj jeste do wpisania turbo tajny tekst dla JS-->
         </p>
-      </div>
+      </section>
     </main>
-    <footer>
-      Copyright Karolina Wojciechowska <a href="#top">Wróć na górę</a>
-    </footer>
+    <footer class="footer">Copyright Karolina Wojciechowska <a href="#top">Wróć na górę</a></footer>
     <script src="js/main.js"></script>
   </body>
 </html>
