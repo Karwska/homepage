@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  color: #270722;
+  text-decoration: none;
+}
+
 body {
   background-image: linear-gradient(
     to right,
@@ -26,18 +31,32 @@ body {
   margin: 0 auto;
 }
 
+.homepage-header__heading--main {
+  display: flex;
+  justify-content: center;
+  color: #6d6875;
+  font-size: 45px;
+  font-weight: bold;
+  border: 2px solid #270722;
+  background-color: rgba(47, 10, 41, 0.123);
+}
 .navigation {
-  width: 100vw;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
 
 }
 
 .navigation__link {
-  display: inline-block;
   border: 1px solid #270722;
   width: 100px;
-  margin: auto;
   padding: 1px;
+  margin: 2px;
   background: #300a2a85;
+  color: #dbcf96;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
 .notes {
