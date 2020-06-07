@@ -139,6 +139,10 @@ body {
   justify-content: center;
 }
 
+.navigation__link:hover {
+  color: #e4afcb;
+}
+
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -165,6 +169,17 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.flex-notes__heading::before {
+  content: " ";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(73, 22, 102, 0.596);
+  border-radius: 50%;
+}
+
+
 
 @media (max-width: 768px) {
   .navigation {
