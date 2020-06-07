@@ -26,10 +26,30 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.form {
+}
+
+.form__input {
+  display: block;
+  min-width: 50vw;
+}
+.grid {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+  grid-gap: 16px;
+}
+
+.grid__element {
+  background-color: #520b28;
+  color: #dbcf96;
+  border: 1px solid hotpink;
+  padding: 3px;
+}
 .footer {
   display: flex;
   justify-content: center;
   color: #270722;
+  margin-top: 30px;
 }
 
 .footer__navigation {
@@ -39,22 +59,67 @@ body {
 }
 
 .homepage-header {
-  width: 1000px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "article article aside";
+  grid-template-columns: 1fr 1fr 400px;
+  margin: 16px
 }
 
 .homepage-header__heading {
   color: #6d6875;
   font-size: 30px;
+  margin-top: 0;
 }
 
 .homepage-header__heading--main {
+  grid-area: header;
+  grid-column-start: 1;
   display: flex;
   justify-content: center;
   font-size: 45px;
   font-weight: bold;
   border: 2px solid #270722;
   background-color: rgba(47, 10, 41, 0.123);
+
+}
+
+.homepage-header__article {
+  grid-area: article;
+  
+}
+
+.homepage-header__aside {
+  grid-area: aside;
+}
+
+.layout {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "article . aside"
+    "footer footer footer";
+  grid-template-columns: 1fr 64px 200px;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+.layout__header {
+  grid-area: header;
+  background-color: hotpink;
+  grid-column: 1 / span 3;
+}
+.layout__article {
+  grid-area: article;
+}
+.layout__aside {
+  grid-area: aside;
+}
+.layout__footer {
+  grid-area: footer;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 .navigation {
   max-width: 100vw;
@@ -74,7 +139,12 @@ body {
   justify-content: center;
 }
 
-.notes {
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.flex-notes {
   display: inline-block;
   border: 1px solid #270722;
   border-bottom-left-radius: 10px;
@@ -89,7 +159,7 @@ body {
   color: #dbcf96;
 }
 
-.notes__heading {
+.flex-notes__heading {
   color: #520b28;
   margin-top: 0;
   display: flex;

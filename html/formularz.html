@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karwska|Formularz</title>
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="body-forms">
+      <header id="top">
+        <nav class="navigation">
+          <a href="/index.html" class="navigation__link">Strona główna</a>
+          <a href="/html/media_queries_testing.html" class="navigation__link">Media queries</a>
+          <a href="/html/layout_grid.html" class="navigation__link">Layout gridowy</a>
+          <a href="/html/formularz.html" class="navigation__link">Formularz</a>
+        </nav>
+      </header>
+    </header>
+    <main>
+      <h1>Forms playground</h1>
+      <form class="form" method="post" action="https:\\dev.cotenfrontend.pl">
+        <p>
+          <label for="firstName">Your name:</label>
+          <input class="form__input" type="text" value="Karolina" name="firstName" id="firstName" />
+        </p>
+
+        <p>
+          <label for="lastName">Your last name (pole wymagane):</label>
+          <input
+            class="form__input"
+            type="text"
+            placeholder="Wpisz swoje nazwisko ajfklagfskjgblskgskghlg"
+            name="lastName"
+            id="lastName"
+            required
+          />
+        </p>
+
+        <p>
+          <label
+            >Numer telefonu
+            <input
+              class="form__input"
+              type="tel"
+              placeholder="Wpisz swój numer telefonu"
+              name="phoneNumber"
+              id="phoneNumber"
+          /></label>
+        </p>
+
+        <p>
+          <label
+            >Wpisz swój wiek <input class="form__input" type="number" placeholder="Wpisz swój wiek" name="age" id="age"
+          /></label>
+        </p>
+
+        <p>
+          <label
+            >Wpisz swój e-mail
+            <input class="form__input" type="email" placeholder="Wpisz swój e-mail" name="email" id="email"
+          /></label>
+        </p>
+
+        <p>
+          <label
+            >Twój poziom uwielbienia dla frontendu
+            <input
+              class="form__input form__input--js"
+              type="range"
+              min="0"
+              max="10"
+              step="2"
+              name="range"
+              id="range"
+              value="range"
+          /></label>
+        </p>
+
+        <p>
+          <label
+            >Wpisz swoje hasło (nie używaj spacji):
+            <input pattern="[a-zA-Z0-9]+" class="form__input" type="password" placeholder="Wpisz swoje hasło" name="password" id="password"
+          /></label>
+        </p>
+
+        <p>
+          <label>Avatar <input class="form__input" type="file" name="avatar" id="avatar" /></label>
+        </p>
+
+        <fieldset>
+          <legend>Adres</legend>
+          <p>
+            <label for="city">Your city:</label>
+            <input class="form__input" type="text" placeholder="Miasto" name="city" id="city" />
+          </p>
+
+          <p>
+            <label for="street">Your street:</label>
+            <input class="form__input" type="text" placeholder="Ulica" name="street" id="Ulica" />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Ulubione smaki lodów</legend>
+          <p>
+            <label><input name="iceCream" type="radio" value="chocolate" />Czekolada</label>
+          </p>
+          <p>
+            <label><input name="iceCream" type="radio" value="strawberry" />Truskawka</label>
+          </p>
+          <p>
+            <label><input name="iceCream" type="radio" value="vanilla" />Wanilia</label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Checkboxik</legend>
+          <p>
+            <label><input name="agreement" value="agreement" type="checkbox" checked />Zgadzam się</label>
+          </p>
+          <p>
+            <label><input name="disagreement" value="disagreement" type="checkbox" />Nie zgadzam się</label>
+          </p>
+        </fieldset>
+        <p>
+          <label for="band">Wybierz jeden zespół:</label>
+          <select class="form__input" id="band"
+            ><option value="band-1">Metallica</option>
+            <option value="band-2">Radiohead</option
+            ><option value="band-3">Nirvana</option></select
+          >
+        </p>
+        <p>
+          <label for="textarea">Napisz coś o sobie:</label>
+          <textarea class="form__input" id="textarea" name="textarea">Napisz coś super</textarea>
+        </p>
+
+        <p>
+          <input type="submit"/>
+        </p>
+      </form>
+    </main>
+    <footer>Copyright Karolina Wojciechowska <a href="#top">Wróć na górę</a></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
