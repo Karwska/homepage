@@ -1,12 +1,14 @@
 {
   "name": "js",
   "version": "1.0.0",
-  "description": "",
+  "description": "main",
   "main": "main.js",
   "scripts": {
+    "text": "hello world",
+    "cow": "cowsay -t hello",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "karolina",
   "license": "ISC",
   "dependencies": {
     "normalize.css": "^8.0.1",
