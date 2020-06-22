@@ -169,3 +169,11 @@ button.addEventListener("mouseenter", (e) => {
   console.log(e);
 });
 
+import {hello} from './hello.js'
+
+console.log(hello());
+
+import karolina from './karolina.js';
+
+console.log(karolina);
+

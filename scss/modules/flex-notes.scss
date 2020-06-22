@@ -1,0 +1,33 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .flex-notes {
+    display: inline-block;
+    border: 1px solid #270722;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #300a2a85;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 20vw;
+    overflow: auto;
+    height: 300px;
+    color: #dbcf96;
+    &__heading {
+      color: #520b28;
+      margin-top: 0;
+      display: flex;
+      justify-content: center;
+    }
+    &__heading::before {
+      content: " ";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: rgba(73, 22, 102, 0.596);
+      border-radius: 50%;
+    }
+  }
